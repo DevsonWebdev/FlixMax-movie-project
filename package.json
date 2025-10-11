@@ -1,0 +1,27 @@
+{
+  "name": "my-parcel-project",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Devson WebDev",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "scrollreveal": "^4.0.9",
+    "spinkit": "^2.0.1",
+    "swiper": "^12.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "sass": "^1.93.2"
+  }
+}

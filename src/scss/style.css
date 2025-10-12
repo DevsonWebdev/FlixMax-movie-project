@@ -14,15 +14,4 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
 html {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-}
-// Fonts-- BBH Sans Bogle variables
-$bsb-fs-xxlg: 48px;
-$bsb-fs-xlg: 36px;
-$bsb-fs-lg: 32px;
-$bsb-fs-md: 21px;
-$bsb-fs-xlg: 16px;
-
-//style sheet partials
-@import "./feed";
-@import "./quote";
-@import "./autoPage";
+}/*# sourceMappingURL=style.css.map */

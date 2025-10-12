@@ -1,0 +1,8 @@
+|OMDB API KEYS|
+==c34bda0
+==base Url=
+
++++++IMDB+++++
+Free API for searching
+https://imdb.iamidiotareyoutoo.com/search?q=Spiderman
+

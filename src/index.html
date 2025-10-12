@@ -3,14 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/style.scss">
-    <script type="module" src="./js/script.js"></script>
-    <title>Movify</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./scss/font-awesome.css" />
+    <link rel="stylesheet" href="./scss/bootstrap.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <!-- Scripts -->
+    <script type="module" src="./js/index.js"></script>
+    <title> Flix Max | Home</title>
 </head>
 
 <body>
-    <img src="./imgs/car-1.png" alt="">
-    <img src="./imgs/IMG_20250704_104727.jpg" alt="">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./src/images/logo.svg" alt="" /></a>
+            <form action="" method="post" role="search" id="searchForm"
+                class="d-flex justify-content-center align-items-center p-0">
+                <label for="search" hidden>
+                    Anime,Movies,shows
+                </label>
+                <input type="search" name="search" id="search" class="form-input-lg m-0">
+                <i role="button" type="submit" title="search"
+                    class=" fa-solid fa-search fa-2x text-secondary ms-1 me-3 mt-1 p-0"></i>
+            </form>
+            <button class="navbar-toggler borde-0 p-0" data-bs-target="#navbarnav-items" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse px-2 me-3" id="navbarnav-items">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a href="#" aria-current="page" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#trending" class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#trending" class="nav-link">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#news" class="nav-link">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>

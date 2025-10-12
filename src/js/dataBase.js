@@ -54,7 +54,7 @@ function movieNews() {
         url: 'https://moviesverse1.p.rapidapi.com/movie-news',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
         }
     };
@@ -71,7 +71,7 @@ function mostTrendingMvies() {
         url: 'https://moviesverse1.p.rapidapi.com/new-horror',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
         }
     };
@@ -87,7 +87,7 @@ function horroMovies() {
         url: 'https://moviesverse1.p.rapidapi.com/new-horror',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
         }
     };
@@ -103,7 +103,7 @@ function movieGenre() {
         url: 'https://moviesverse1.p.rapidapi.com/movies-by-genre?genre=action',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
         }
     };
@@ -120,7 +120,7 @@ function popularAnime() {
         url: 'https://anime-data-scraper-api.p.rapidapi.com/v1/anime/popular',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'anime-data-scraper-api.p.rapidapi.com'
         }
     };
@@ -136,7 +136,7 @@ function topAnimeMovies() {
         url: 'https://anime-data-scraper-api.p.rapidapi.com/v1/anime/top/movie',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'anime-data-scraper-api.p.rapidapi.com'
         }
     };
@@ -153,7 +153,7 @@ function topRankAnime() {
         url: 'https://anime-data-scraper-api.p.rapidapi.com/v1/anime/top/rank',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'anime-data-scraper-api.p.rapidapi.com'
         }
     };
@@ -169,7 +169,7 @@ function topTvAnime() {
         url: 'https://anime-data-scraper-api.p.rapidapi.com/v1/anime/top/tv',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'anime-data-scraper-api.p.rapidapi.com'
         }
     };
@@ -185,7 +185,7 @@ function topAnimeShows() {
         url: 'https://moviesverse1.p.rapidapi.com/top-anime-shows',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
         }
     };
@@ -202,7 +202,7 @@ function AiImageGenerator() {
         url: 'https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/fluximagegenerate/generateimage.php',
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com',
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -248,7 +248,7 @@ function get100Quotes() {
         url: 'https://movie-and-tv-shows-quotes.p.rapidapi.com/quotes',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'movie-and-tv-shows-quotes.p.rapidapi.com'
         }
     };
@@ -265,7 +265,7 @@ function randomQuotes() {
         url: 'https://movie-and-tv-shows-quotes.p.rapidapi.com/quotes/random/quote',
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020',
+            'x-rapidapi-key': rapidApiKey,
             'x-rapidapi-host': 'movie-and-tv-shows-quotes.p.rapidapi.com'
         }
     };

@@ -5,4 +5,10 @@
 +++++IMDB+++++
 Free API for searching
 https://imdb.iamidiotareyoutoo.com/search?q=Spiderman
+const apiKey=c34bda0;
+// https://omdbapi.com/?s=superman&page=1&apikey=c34bda0
+//https://omdbapi.com/?s=batwoman&page=1&apikey=c34bda0
+// ====================videos===================
+// Trailers ====https://api.kinocheck.com/trailers/trending
+// latest trailers ===https://api.kinocheck.com/trailers/latest
 

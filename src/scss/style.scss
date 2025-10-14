@@ -26,3 +26,18 @@ $bsb-fs-xlg: 16px;
 @import "./feed";
 @import "./quote";
 @import "./autoPage";
+
+// Video cont
+.vid-cont {
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  .vid-cont-img {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+  }
+}

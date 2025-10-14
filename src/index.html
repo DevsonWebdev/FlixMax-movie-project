@@ -7,13 +7,16 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="./scss/font-awesome.css" />
     <link rel="stylesheet" href="./scss/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./scss/style.css" />
+
     <!-- Scripts -->
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./js/index.js"></script>
     <title> Flix Max | Home</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html"><img class="logo" src="./src/images/logo.svg" alt="" /></a>
@@ -26,7 +29,8 @@
                 <i role="button" type="submit" title="search"
                     class=" fa-solid fa-search fa-2x text-secondary ms-1 me-3 mt-1 p-0"></i>
             </form>
-            <button class="navbar-toggler borde-0 p-0" data-bs-target="#navbarnav-items" data-bs-toggle="collapse">
+            <button class="navbar-toggler borde-0 p-0 shadow-none" data-bs-target="#navbarnav-items"
+                data-bs-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse px-2 me-3" id="navbarnav-items">
@@ -51,6 +55,30 @@
             </div>
         </div>
     </nav>
+    <main class="mx-3">
+        <!-- Top anmie cont -->
+        <div class="top-anime-cont mt-6">
+            <!-- Title -->
+            <h3 class="heading-text text-white">Popular anime</h3>
+            <!-- Anime cont -->
+            <div class="swiper">
+                <div class="anime-cont scroll-x-cont swiper-wrapper animeSwiper">
+
+                </div>
+            </div>
+        </div>
+        <!-- Top movies cont -->
+        <div class="top-anime-cont mt-6">
+            <!-- Title -->
+            <h3 class="heading-text text-white">Horror</h3>
+            <!-- Anime cont -->
+
+            <div class="horror-movie-cont d-flex justify-content-center align-items-center scroll-x-cont ">
+            </div>
+
+        </div>
+    </main>
+
 </body>
 
 </html>

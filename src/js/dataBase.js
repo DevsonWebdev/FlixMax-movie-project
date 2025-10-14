@@ -12,7 +12,7 @@ function searchMovie(movieName) {
     });
 }
 // RAPID API KEY
-const rapidApiKey = e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020;
+export const rapidApiKey = "e9bd911239msh07e14fa4c67bbf5p132d38jsn345fdb1b0020";
 // IMDB POPULAR TV SHOWS
 function tvShows() {
     const tvShowSettings = {
@@ -30,56 +30,7 @@ function tvShows() {
         console.log(response);
     });
 }
-// GET NEWS
-function getNews() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://imdb232.p.rapidapi.com/api/news/get-by-category?limit=25&category=CELEBRITY',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'imdb232.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    })
-}
-function movieNews() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://moviesverse1.p.rapidapi.com/movie-news',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
-}
 //TRENDING MOVIES
-function mostTrendingMvies() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://moviesverse1.p.rapidapi.com/new-horror',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
-}
 function horroMovies() {
     const settings = {
         async: true,
@@ -113,7 +64,8 @@ function movieGenre() {
     });
 }
 //TRENDING ANIME
-function popularAnime() {
+export function popularAnime() {
+    let data;
     const settings = {
         async: true,
         crossDomain: true,
@@ -126,10 +78,12 @@ function popularAnime() {
     };
 
     $.ajax(settings).done(function (response) {
-        console.log(response);
+        localStorage.setItem("popularAnime", JSON.stringify(response));
+        data = response
     });
+    return data
 }
-function topAnimeMovies() {
+export function topAnimeMovies() {
     const settings = {
         async: true,
         crossDomain: true,
@@ -146,7 +100,7 @@ function topAnimeMovies() {
     });
 
 }
-function topRankAnime() {
+export function topRankAnime() {
     const settings = {
         async: true,
         crossDomain: true,
@@ -162,101 +116,8 @@ function topRankAnime() {
         console.log(response);
     });
 }
-function topTvAnime() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://anime-data-scraper-api.p.rapidapi.com/v1/anime/top/tv',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'anime-data-scraper-api.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    })
-}
-function topAnimeShows() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://moviesverse1.p.rapidapi.com/top-anime-shows',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'moviesverse1.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    })
-}
-// AI IMAGE GENERATOR
-function AiImageGenerator() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/fluximagegenerate/generateimage.php',
-        method: 'POST',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com',
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        data: { "prompt": "Hulk", "style_id": 4, "size": "1-1" }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
-}
-// TRENDING TRAILERS
-function getTrendingTrailers() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: "https://api.kinocheck.com/trailers/trending",
-        method: 'GET'
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    })
-}
-// LATEST TRAILERS
-function getLatestTrailers() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: "https://api.kinocheck.com/trailers/latest",
-        method: 'GET'
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    })
-}
 // MOVIE QUOTES
-// 100
-function get100Quotes() {
-    const settings = {
-        async: true,
-        crossDomain: true,
-        url: 'https://movie-and-tv-shows-quotes.p.rapidapi.com/quotes',
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'movie-and-tv-shows-quotes.p.rapidapi.com'
-        }
-    };
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
-}
+// RANDOM MOVIE QUOTE
 
 function randomQuotes() {
     const settings = {
